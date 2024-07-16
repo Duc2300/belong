@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: 'gotham'; src: url("../font/SVN-Gotham Black.otf");font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+	font-family: 'gotham-regular'; src: url("../font/SVN-Gotham Regular.otf");font-weight: normal;
+    font-style: normal;
+}
+
+.content{
+	width: 90%; margin: auto;position: relative; z-index: 10; padding-top: 10px
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+	display: flex; font-family: 'gotham';align-items: center
+}
+.menu ul li a {
+ position: relative;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+	top: 5px
+}
+.menu a::before{
+	 content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+.menu ul li a:hover::before {
+  width: 100%
+}
+.logo img {
+    width: 250px; /* Chiều rộng của logo */
+    height: auto; /* Giữ tỷ lệ chiều cao */
+    max-width: 100%; /* Đảm bảo logo không vượt quá kích thước của container */
+}
+
+
+.back-video{
+	position: absolute; right:0; bottom: 0; z-index: -1
+}
+video{
+	width: 100%; height:100vh; display: flex; align-items: center; justify-content: center; object-fit:cover ;
+}.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2); /* Màu đen với độ trong suốt 50% */
+}
+.box{
+	padding-top: 10px
+
+}
+.line {
+    top: 10px;
+    height: 750px;
+    width: 2px; /* Độ dài của đường line */
+    background-color: white; /* Màu của đường line */
+}
+.line-right {
+    top: 10px;
+    height: 750px;
+    width: 2px; /* Độ dài của đường line */
+    background-color: white; /* Màu của đường line */
+		
+}
+.footer{
+	width: 90%;margin: auto;top: 0;color: white ;font-family: 'gotham-regular';
+}
+.white{
+	color: white
+}
+.text-duoi ul li a{
+	position: relative;
+        color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+	top: 5px
+}
+.text-duoi ul{
+	  margin: 0;
+  padding: 0;
+  list-style: none;
+	display: flex;font-family: 'gotham-regular'
+}
+.mini-line{
+	 width: 10px; /* Độ dài của đường line */
+    background-color: white; /* Màu của đường line */
+    height: 10px
+}
+.menu1 ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+	display: flex; font-family: 'gotham';align-items: center
+}
+.menu1 ul li a {
+ position: relative;
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+	top: 5px
+}
+.menu1 a::before{
+	 content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background:black;
+    transition: .3s;
+}
+.menu1 ul li a:hover::before {
+	width: 100%}
+.footer1{
+	width: 90% ;margin: auto;top: 0;color: black ;font-family: 'gotham-regular';}
+.text-duoi1 ul li a{
+	position: relative;
+        color: black;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+	top: 5px
+}
+.text-duoi1 ul{
+	  margin: 0;
+  padding: 0;
+  list-style: none;
+	display: flex;font-family: 'gotham-regular'
+}
+.background1{
+	background-color: #FFAAA7 ;width: 100%;height: 100% ;margin: 0; padding: 0
+}
+.box{
+	float: left ;font-family: 'gotham';font-size: 50px; padding: 0;margin: 0; width: 40%
+}
+.box2{
+	float: right;width: 60%; align-items: center ;font-size: 15px ;font-family: 'gotham-regular';padding: 20px
+}
+.padding{
+	padding: 20px
+}
+body{
+	background-color: #FFAAA7
+}
